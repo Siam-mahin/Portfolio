@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mahin — Professional Portfolio</title>
+  <meta name="description" content="Portfolio — projects, achievements, publications, contact" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <div class="brand">
+        <div class="logo">M</div>
+        <div class="brand-text">
+          <h1 class="brand-name">Mahin</h1>
+          <p class="brand-role">Full-stack Developer & ML Researcher</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#projects">Projects</a>
+        <a href="#research">Research</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+        <button id="themeToggle" class="theme-btn" aria-pressed="false">Dark</button>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-inner">
+        <div class="hero-left">
+          <h2>Hello, I'm</h2>
+          <h1 class="hero-name">Mahin</h1>
+          <p class="hero-sub">
+            Results-driven Full-stack Developer & Researcher building scalable web applications and advanced Machine Learning solutions.
+          </p>
+
+          <!-- Bangladesh Live Time -->
+          <div class="live-time">
+            <strong>Bangladesh Time:</strong> <span id="bdTime">Loading...</span>
+          </div>
+
+          <div class="hero-ctas">
+            <a href="#contact" class="btn primary">Hire Me</a>
+            <a href="#projects" class="btn outline">See Projects</a>
+            <a href="resume.pdf" class="btn outline" download>Download Resume</a>
+          </div>
+
+          <ul class="quick-stats">
+            <li><strong id="stat-projects">10+</strong><span>Projects</span></li>
+            <li><strong id="stat-years">4+</strong><span>Years Experience</span></li>
+            <li><strong id="stat-papers">3</strong><span>Papers</span></li>
+            <li><strong id="stat-certifications">5</strong><span>Certifications</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-right">
+          <div class="photo-frame">
+            <img id="heroPhoto" src="c:\Users\User\OneDrive\Desktop\336674156_783110662798474_3888939670681867683_n.jpg" alt="Mahin — portrait">
+          </div>
+          <div class="contact-mini">
+            <a href="mailto:mahin22205101696@diu.edu.bd" class="chip">mahin22205101696@diu.edu.bd</a>
+            <a href="tel:+8801302206104" class="chip">+8801302206104</a>
+            <a href="tel:+8801619668241" class="chip">+8801619668241</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section card">
+      <h2>About Me</h2>
+      <p>
+        I specialize in Python for backend development, Machine Learning, and data-driven applications. My work emphasizes <strong>performance, scalability, and maintainability</strong>, and I actively publish research to optimize systems and web applications.
+      </p>
+
+      <div class="split">
+        <div>
+          <h3>Skills</h3>
+          <ul class="skills">
+            <li>Python <span>🐍</span></li>
+            <li>MySQL / PHP <span>🗄️</span></li>
+            <li>Node.js / Express <span>⚡</span></li>
+            <li>Databases: PostgreSQL / MongoDB <span>🛢️</span></li>
+            <li>Machine Learning / Deep Learning <span>🤖</span></li>
+            <li>Front-end: HTML, CSS, JS, React <span>🌐</span></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Education & Experience</h3>
+          <p>B.Sc. in Computer Science — Daffodil International University</p>
+          <p>Teaching assistant for courses in <strong>Semiconductor Physics</strong> and <strong>Algorithms</strong></p>
+          <p>Worked on multiple <strong>full-stack & ML projects</strong>, delivering scalable solutions.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements" class="section">
+      <h2>Achievements & Certifications</h2>
+      <div class="ach-grid">
+        <article class="ach-card">
+          <img src="e:\mahin portfolio\hi.jpg" alt="Dean's List 2025" class="ach-thumb">
+          <div class="ach-body">
+            <h4>Dean's List — 2025</h4>
+            <p>Recognized for outstanding academic performance at Daffodil International University.</p>
+          </div>
+        </article>
+
+        <article class="ach-card">
+          <img src="e:\mahin portfolio\Screenshot 2025-12-06 014346.jpg" alt="Leadership Certificate" class="ach-thumb">
+          <div class="ach-body">
+            <h4>Leadership Qualities</h4>
+            <p>Completed professional certification in leadership and team management.</p>
+          </div>
+        </article>
+
+        <article class="ach-card">
+          <img src="e:\mahin portfolio\Screenshot 2025-12-06 015031.jpg" alt="AWS AI Practitioner" class="ach-thumb">
+          <div class="ach-body">
+            <h4>AWS Certified AI Practitioner</h4>
+            <p>Validated knowledge of AI, ML, and generative AI concepts for industry applications.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section card">
+      <h2>Projects</h2>
+      <p class="muted">Projects include GitHub link, live demo, and technologies used.</p>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>Biomedical Text Classification Web App</h3>
+          <p>ML-based web app for classifying biomedical texts using ensemble techniques.</p>
+          <div class="proj-meta">Python • Flask • JavaScript • Machine Learning</div>
+          <div class="proj-actions">
+            <a class="btn small" href="https://github.com/Siam-mahin/Biomedical-Text-Classification-Using-Machine-Learning-and-Ensemble-Techniques" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn small outline" href="https://drive.google.com/drive/folders/1N8aJ77ilBnFGgMbGY4m5WoMJYmTU4Dhn?usp=sharing" target="_blank" rel="noopener">Live Demo</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>MiniC Master Compiler</h3>
+          <p>A compiler project using Flex and Bison for a subset of C language.</p>
+          <div class="proj-meta">C • Flex • Bison</div>
+          <div class="proj-actions">
+            <a class="btn small" href="https://github.com/Siam-mahin/Compiler-design-project" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn small outline" href="#" target="_blank" rel="noopener">Live Demo</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- RESEARCH / PUBLICATIONS -->
+    <section id="research" class="section">
+      <h2>Research & Publications</h2>
+      <p class="muted">Selected papers with first-page preview. Click to view full PDF.</p>
+
+      <div class="papers-grid">
+        <article class="paper-card">
+          <h3>Biomedical-Text-Classification-Using-ML</h3>
+          <div class="paper-preview">
+            <a href="https://github.com/Siam-mahin/Biomedical-Text-Classification-Using-Machine-Learning-and-Ensemble-Techniques/blob/main/paper%20mahin.pdf" target="_blank" rel="noopener">
+              <iframe src="e:\mahin portfolio\paper.jpg" width="100%" height="300px"></iframe>
+            </a>
+          </div>
+          <p class="paper-abstract">
+            <strong>Abstract:</strong> Server-side and client-side optimization techniques to reduce load time and CPU usage under heavy concurrency.
+          </p>
+          <div class="paper-actions">
+            <a href="https://github.com/Siam-mahin/Biomedical-Text-Classification-Using-Machine-Learning-and-Ensemble-Techniques/blob/main/paper%20mahin.pdf" class="btn small" target="_blank" rel="noopener">View Full PDF</a>
+            <a href="https://doi.org/10.xxxx/xxxxx" class="btn small outline" target="_blank" rel="noopener">DOI</a>
+          </div>
+        </article>
+
+        <article class="paper-card">
+          <h3>Satellite Geospatial Images Classification</h3>
+          <div class="paper-preview">
+            <a href="papers/riverbank-erosion.pdf" target="_blank" rel="noopener">
+              <iframe src="e:\mahin portfolio\Screenshot 2025-12-06 022005.jpg" width="100%" height="300px"></iframe>
+            </a>
+          </div>
+          <p class="paper-abstract">
+            <strong>Abstract:</strong> Study on satellite geospatial images classification using deep learning techniques.
+          </p>
+          <div class="paper-actions">
+            <a href="papers/riverbank-erosion.pdf" class="btn small" target="_blank" rel="noopener">View Full PDF</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS / RECOMMENDATIONS -->
+    <section id="testimonials" class="section card">
+      <h2>Testimonials</h2>
+      <p class="muted">What people say about working with me.</p>
+
+      <div class="testimonials-grid">
+        <article class="testimonial-card">
+          <p>"Mahin is an exceptional . His attention to detail and expertise in ML helped our project succeed beyond expectations."</p>
+          <h4>— Aminul islam , Research Mentor</h4>
+        </article>
+
+        <article class="testimonial-card">
+          <p>"Professional, reliable, and highly skilled. Mahin delivered scalable solutions for our Project efficiently."</p>
+          <h4>— Mr. John Doe, Client</h4>
+        </article>
+
+        
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section card">
+      <h2>Contact Me</h2>
+
+      <div class="contact-grid">
+        <form id="contactForm" class="contact-form" novalidate>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" type="text" placeholder="Brief subject" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Write your message..." required></textarea>
+
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Send Message</button>
+            <button type="button" id="contactReset" class="btn outline">Reset</button>
+          </div>
+
+          <p id="formStatus" class="form-status" aria-live="polite"></p>
+        </form>
+
+        <aside class="contact-info">
+          <h3>Other ways to reach me</h3>
+          <p>Email: <a href="mailto:Siam.Mahin2001@gmail.com">Siam.Mahin2001@gmail.com</a></p>
+          <p>Phone: <a href="tel:+8801302206104">+880 1302206104</a></p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/siam-hossain-31640234b/" target="_blank" rel="noopener">Siam Hossain</a></p>
+          <p>GitHub: <a href="https://github.com/Siam-mahin" target="_blank" rel="noopener">@Siam-mahin</a></p>
+        </aside>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <p>© 2025 Mahin • Built with care • <a href="#home">Back to top</a></p>
+    </footer>
+  </div>
+
+  <!-- Script for Bangladesh Time -->
+  <script>
+    function updateBDTime() {
+      const bdTimeElement = document.getElementById('bdTime');
+      if (!bdTimeElement) return;
+
+      const now = new Date();
+      const utc = now.getTime() + now.getTimezoneOffset() * 60000;
+      const bdOffset = 6 * 60 * 60000; // UTC+6
+      const bdTime = new Date(utc + bdOffset);
+
+      const options = {
+        weekday: 'short',
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false
+      };
+
+      bdTimeElement.textContent = bdTime.toLocaleString('en-US', options);
+    }
+
+    setInterval(updateBDTime, 1000);
+    updateBDTime();
+  </script>
+
+  <script src="script.js" defer></script>
+  
+</body>
+</html>
